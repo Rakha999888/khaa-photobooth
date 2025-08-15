@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHA PROJECT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">KHAA PHOTOBOOTH</h1>
+        
+        <div class="photobooth">
+            <!-- Video Feed -->
+            <div class="camera-container">
+                <video id="video" autoplay playsinline muted></video>
+                <canvas id="canvas"></canvas>
+                <!-- Frame will be added via CSS -->
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="capture" class="btn">CAPTURE</button>
+                <button id="download" class="btn" disabled>DOWNLOAD</button>
+                
+                <div class="filters">
+                    <h3>FILTERS</h3>
+                    <div class="filter-options">
+                        <select id="filter">
+                            <option value="none">None</option>
+                            <option value="grayscale">Grayscale</option>
+                            <option value="sepia">Sepia</option>
+                            <option value="invert">Invert</option>
+                            <option value="hue-rotate">Hue Rotate</option>
+                            <option value="cartoon">Cartoon/Posterize</option>
+                            <option value="glitch">Glitch</option>
+                        </select>
+                        
+                        <div class="slider-container">
+                            <label for="brightness">Brightness</label>
+                            <input type="range" id="brightness" min="0" max="200" value="100">
+                        </div>
+                        
+                        <div class="slider-container">
+                            <label for="contrast">Contrast</label>
+                            <input type="range" id="contrast" min="0" max="200" value="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery" id="gallery">
+            <h3>YOUR SHOTS</h3>
+            <div class="thumbnails" id="thumbnails"></div>
+        </div>
+    </div>
+
+    <div class="neon-overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
