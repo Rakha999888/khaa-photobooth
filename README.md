@@ -4,8 +4,7 @@ A modern, interactive web-based photobooth application with real-time filters an
 
 🌐 **Live Demo:** [https://photobothkhaa.netlify.app/](https://photobothkhaa.netlify.app/)
 
-![Khaa Photobooth Preview](https://via.placeholder.com/800x500.png?text=Khaa+Photobooth+Preview)
-> *Screenshot of Khaa Photobooth in action*
+
 
 ## ✨ Features
 
