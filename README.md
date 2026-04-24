@@ -2,7 +2,6 @@
 
 A modern, interactive web-based photobooth application with real-time filters and effects. Built with vanilla JavaScript, HTML5, and CSS3, this photobooth runs directly in your browser with no server required.
 
-🌐 **Live Demo:** [https://photobothkhaa.netlify.app/](https://photobothkhaa.netlify.app/)
 
 
 
